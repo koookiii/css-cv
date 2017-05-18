@@ -45,7 +45,6 @@ h2, .experience-institution, #about h3 {
 }
 
 section {
-
   padding-left: 9px;
   clear: both;
 }
@@ -121,58 +120,55 @@ img {
   float: left;
 }
 
-.contact-type{
-  display:none;
-}
-
-
-a[href='mailto:jad@codi.tech']{
-background: url('images/email.png') no-repeat 6px center;
-background-size: 85px 85px;
-width: 85px;
-height: 85px;
-display: block;
-}
-a[href='tel:+96170261482']{
-background: url('images/phone.png') no-repeat 6px center;
-background-size: 85px 85px;
-width: 85px;
-height: 85px;
-display: block;
-}
-
-a[href='https://github.com/Xananax/']{
-background: url('images/github.png') no-repeat 6px center;
-background-size: 85px 85px;
-width: 85px;
-height: 85px;
-display: block;
-}
-
-a[href='//www.facebook.com/sad.jarout']{
-background: url('images/facebook.png') no-repeat 6px center;
-background-size: 85px 85px;
-width: 85px;
-height: 85px;
-display: block;
-}
-
-a{
-  float: left;
-}
-a,a:visited,a:link,a:active{
-  color: transparent;
-
-}
-.contact-skype{
+.contact-type {
   display: none;
 }
 
-section{
+a[href='mailto:jad@codi.tech'] {
+  background: url('images/email.png') no-repeat 6px center;
+  background-size: 85px 85px;
+  display: block;
+}
+
+a[href='tel:+96170261482'] {
+  background: url('images/phone.png') no-repeat 6px center;
+  background-size: 85px 85px;
+  display: block;
+}
+
+a[href='https://github.com/Xananax/'] {
+  background: url('images/github.png') no-repeat 6px center;
+  background-size: 85px 85px;
+  display: block;
+}
+
+a[href='//www.facebook.com/sad.jarout'] {
+  background: url('images/facebook.png') no-repeat 6px center;
+      background-size: 85px 85px;
+  display: block;
+}
+a{
+  width: 85px;
+  height: 85px;
+
+}
+a {
+  float: left;
+}
+
+a, a:visited, a:link, a:active {
+  color: transparent;
+}
+
+.contact-skype {
+  display: none;
+}
+
+section {
   position: relative;
 }
 
-section > h3{
+section>h3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -183,28 +179,89 @@ section > h3{
   padding: 0;
 }
 
-section > div, section > ul{
+section>div, section>ul {
   padding-left: 200px;
 }
 
-.skills{
-  clear:both;
+.skills {
+  clear: both;
   float: left;
 }
 
-#competencies::after{
-  content:"";
+#competencies::after {
+  content: "";
   display: table;
-  clear:both;
+  clear: both;
 }
-.experience{
+
+.experience {
   position: relative;
 }
-.experience-details{
- position:absolute;
- top:0;
- right:0;
+
+.experience-details {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-ul{
+
+ul {
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  img {
+    display: none;
+  }
+  #about p {
+    max-width: 370px;
+  }
+  .skill {
+    width: 90px;
+  }
+  .content {
+    max-width: 370px;
+  }
+  header {
+    max-width: 370px;
+  }
+  section>div, section>ul {
+    padding-left: 0px;
+  }
+  section>h3 {
+    position: static;
+    border-bottom: 1px solid black;
+    border-right: 0px;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+  a[href='mailto:jad@codi.tech'] {
+    background: url('images/email.png') no-repeat 6px center;
+    background-size: 40px 40px;
+    display: block;
+  }
+
+  a[href='tel:+96170261482'] {
+    background: url('images/phone.png') no-repeat 6px center;
+    background-size: 40px 40px;
+    display: block;
+  }
+
+  a[href='https://github.com/Xananax/'] {
+    background: url('images/github.png') no-repeat 6px center;
+    background-size: 40px 40px;
+    display: block;
+  }
+
+  a[href='//www.facebook.com/sad.jarout'] {
+    background: url('images/facebook.png') no-repeat 6px center;
+        background-size: 40px 40px;
+    display: block;
+  }
+  a{
+    width: 40px;
+    height: 40px;
+  }
 }

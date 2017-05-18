@@ -180,3 +180,33 @@ section{
 .contacts{
   float:right;
 }
+@media only screen and (max-width: 400px) {
+
+ #contact{
+   position:static;
+ }
+ header{
+   position:static;
+ }
+ .content{
+   max-width: 370px;
+ }
+ dl{
+   max-width: 370px;
+ }
+ section{
+   max-width: 370px;
+ }
+ #competencies{
+   margin-top: 0px;
+ }
+ #about{
+   margin-top: 10px;
+ }
+ #contact h3{
+   display:block;
+ }
+ header div{
+   max-width: 370px;
+ }
+}
