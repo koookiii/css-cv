@@ -129,7 +129,7 @@ header{
 }
 
 header div{
-  width:1000px;
+  max-width:1000px;
   position: relative;
   margin-left: auto; margin-right: auto;
 }
@@ -145,8 +145,9 @@ figure{
 #contact{
   position:fixed;
   top:0;
+  right:0;
   z-index: 20;
-  width: 1000px;
+  max-width: 1000px;
 }
 #contact h3{
   display: none;
@@ -167,12 +168,14 @@ dd{
   width:200px;
 }
 .content{
-  width: 1000px;
+  max-width: 1000px;
   margin-left: auto; margin-right: auto;
 }
 section{
-  width: 500px;
+  max-width: 500px;
+  width: 50%;
   float: left;
+
 }
 #competencies{
   margin-top: 170px;
@@ -180,13 +183,19 @@ section{
 .contacts{
   float:right;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 750px) {
+  #contact{
+    display: none;
+  }
+}
+@media only screen and (max-width: 420px) {
 
  #contact{
    position:static;
  }
  header{
    position:static;
+   min-width: 370px;
  }
  .content{
    max-width: 370px;
@@ -195,6 +204,7 @@ section{
    max-width: 370px;
  }
  section{
+   width:100%;
    max-width: 370px;
  }
  #competencies{
